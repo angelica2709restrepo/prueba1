@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: url(/Imagenes/fondo3.jpg);
+    background-size: 100%;
+    background-repeat: cover;
+}
+.icono-menu{
+    -ms-wrap-margin: 40px 50px;
+    position: relative;
+    z-index: 10;
+}
+.icono-menu{
+    background-color: rgb(228, 228, 228);
+    color: rgb(42, 42, 42);
+    width: 400px;
+}
+.icono-menu img{
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+}
+.conten{
+    background-color: rgb(93, 34, 129);
+    box-shadow: 2px 0px 5px 2px rgb(255, 255, 255);
+    width: 310px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    text-decoration: none;
+
+}
+.active{
+    transform: translate(-600px);
+    text-decoration: none;
+
+}
+.opacity{
+    background-color: rgb(255, 255, 255);
+    transition: all .5s ease;
+}
+
+.conten ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+    text-decoration: none;
+}
+.conten ul li{
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 25px;
+    padding: 10px 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.conten ul li:hover{
+    background-color: rgb(228, 228, 228);
+    color: rgb(50, 189, 80);
+    text-decoration: none;
+}
+.sine {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    background: white;
+}
+.sine {
+    list-style: none;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 10.5px;
+    color: black;
+    text-shadow: none;
+    animation: anim 7s infinite linear;
+}
+@keyframes anim{
+    0%{
+        color: rgb(222, 221, 221);
+        text-shadow: none;
+    }
+    20%{
+        color: rgb(165, 255, 168);
+        text-shadow: 0 0 1vw blueviolet,
+        0 0 3vw rgb(248, 248, 248);
+    }
+    30%{
+        color: rgb(79, 167, 75);
+        text-shadow: none;
+    }
+    35%{
+        color: rgb(91, 197, 204);
+        text-shadow: 0 0 1vw blueviolet,
+        0 0 3vw rgb(248, 248, 248);
+    }
+    70%{
+        color: rgb(143, 118, 243);
+        text-shadow: none;
+    }
+    85%{
+        color: rgb(122, 42, 142);
+        text-shadow: 0 0 1vw blueviolet,
+        0 0 3vw rgb(248, 248, 248);
+    }
+    90%{
+        color: rgb(58, 181, 95);
+        text-shadow: none;
+    }
+    100%{
+        color: rgb(222, 221, 221);
+        text-shadow: none;
+    }
+}
+.texto{
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    top: 90%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    align-content: center;
+    border-bottom: .7vw solid #fff;
+    overflow: hidden;
+    animation: animate 7s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    30%{
+        width: 50%;
+        height: 0;
+    }
+    60%{
+        width: 59vw;
+        height: 38vw;
+    }
+    80%{
+        width: 59vw;
+        height: 38vw;
+    }
+    100%{
+        width: 59vw;
+        height: 38vw;
+    }
+}
+footer{
+    width: 100%;
+    position: relative;
+    top: 100vh;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: rgb(100, 49, 171);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    border-radius: 30px;
+    height: 80px;
+    margin-bottom: 1rem;
+
+}
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.social-icon{
+    height: 80px;
+    width: 300px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background-image: url(/Imagenes/bog_.svg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon1{
+    height: 80px;
+    width: 120px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background-image: url(/Imagenes/logo-co-colombia.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon:hover, .social-icon1:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #fff;
+    font-size: 18px;
+}
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-item:hover{
+    opacity: 1;
+}
+.copyright{
+    color: #fff;
+    opacity: 0.3;
+    text-align: center;
+}
+h1{
+    margin: 10%;
+    color: rgb(59, 58, 58);
+    background: rgb(220, 176, 241);
+    padding: 2%;
+    border-radius: 50px;
+}
+.conteni{
+    line-height: 2;
+}
+#log{
+    margin-top: 90%;
+}
+

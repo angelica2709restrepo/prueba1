@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Menu.css">
+    <script src="/Complementos/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="/Complementos/easejs.js"></script>
+    <title>Manzanas del cuidado</title>
+    <script> 
+        $(document).ready(function(){
+            $(".icono-menu").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"0"
+                },2500,"easeOutBounce")
+            },function(){
+                    $(this).stop().animate({
+                       marginLeft:"-250px" 
+                    },2500,"easeOutBounce")
+                });
+        }); 
+    </script>
+</head>
+<body>
+    <div class="icono-menu">
+        <img src="/imagenes/raya.svg"  id="icono-menu">
+    </div>
+    <div class="conten active" id="menu">
+        <ul>
+            <a href="/vistas/Menu.html"><li class="conteni">Inicio</li></a>
+            <a href="/vistas/Login.html"><li class="conteni">Inicia sesión</li></a>
+            <a href="/vistas/Registro.html"><li class="conteni">Registrarse</li></a>
+        </ul>
+        <img id="log" src="/Imagenes/logo.svg" alt="">
+    </div>
+    <script src="/Complementos/menu.js"></script>
+
+    <ul class="sine">
+        <li>Manzanas del cuidado</li>
+    </ul>
+    <h1 class="exp">Las Manzanas del Cuidado son espacios de la ciudad en los que se brinda tiempo y servicios a las mujeres y a sus familias.
+        En las Manzanas del Cuidado las cuidadoras tienen tiempo y servicios gratuitos, aquí pueden estudiar, emprender, emplearse, descansar, ejercitarse, recibir orientación y asesoría jurídica y psicológica, lavar su ropa y la de su familia en lavanderías comunitarias, todo totalmente gratis.
+        </h1>
+    <div class="texto">
+        <iframe width='1000' height='800' frameborder='0' scrolling='no' allowfullscreen src="https://mapas.bogota.gov.co/?l=62481,62479,62480,62483,62482&e=-74.5539319288386,4.507690425612057,-74.13164494153447,4.665113137030767,4686&b=7256&show_menu=true"></iframe>
+    </div>
+    
+    <footer>
+        <img src="/imagenes/fondoa.webp" alt="" class="logo">
+        <div class="social-icons-container">
+            <a href="https://bogota.gov.co" class="social-icon"></a>
+            <a href="https://www.colombia.co" class="social-icon1"></a>
+        </div>
+        <ul class="footer-menu-container">
+            <li class="menu-item">Legal</li>
+            <li class="menu-item">Cookies</li>
+            <li class="menu-item">Privacy</li>
+        </ul>
+        <span class="copyright">&copy; Hecho por</span>
+    </footer>
+</body>
+</html>
